@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Flikcr</h1>
+  <%= session[:login] %>
+  <h2>Create new Album</h2>
+  <form method="post" action="/newalbum">
+    <p><input type="text" name="title" value="Album Title"></p>
+    <p><input type="submit" value="Create"></p>
+  </form>
+</div>

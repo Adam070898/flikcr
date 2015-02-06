@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Flikcr</h1>
+  <%= session[:login] %>
+  <h2>Albums for User: <%= @user.name%></h2>
+  <% @user.albums.each do |album| %>
+  <h3>
+    <a href="/albums/<%= album.id %>"><%= album.title %>,</a>
+    <%= album.photos.length %> photos
+  </h3>
+  <%  end %>
+
+</div>

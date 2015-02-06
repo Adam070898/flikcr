@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Lfickr</h1>
+  <h2>Log in</h2>
+  <form method="post" action="/login">
+    <p><input type="text" name="user" value="Username"></p>
+    <p><input type="password" name="pass" value="password"></p>
+    <p><input type="submit" value="Log in"><%= @error %></p>
+  </form>
+  <p>Don't have an account yet? <a href="/register">Register!</a></p>
+</div>

@@ -1,0 +1,7 @@
+<div class="container">
+  <h1>Welcome to Flikcr</h1>
+  <%= session[:login] %>
+  <% Photo.all.each do |photo| %>
+    <a href="/albums/<%= photo.album_id %>/<%= photo.id %>"><img src="<%= photo.file %>">
+  <% end %>
+</div>

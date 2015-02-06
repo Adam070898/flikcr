@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Flikcr</h1>
+  <%= session[:login] %>
+  <h2>
+    <%= @album.title%> by <a href="/users/<%= @owner.id %>/albums">
+    <%= @owner.name %></a>
+    , <%= @album.photos.length %> photos
+  </h2>
+  <% @album.photos.each do |photo| %>
+  <h3>
+    <%= @counter += 1 %> <a href="/albums/<%= @album.id %>/<%= photo.id %>"><%= photo.title %></a>
+  </h3>
+
+
+  <%  end %>
+
+</div>

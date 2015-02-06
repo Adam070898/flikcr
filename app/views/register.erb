@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Flikcr</h1>
+  <h2>Register</h2>
+  <form method="post" action="/register">
+    <p><input type="text" name="user" value="Username"></p>
+    <p><input type="password" name="pass" value="password"></p>
+    <p><input type="submit" value="Register"><%= @error %></p>
+  </form>
+  <p>Already have an account? <a href="/login">Log in!</a></p>
+</div>
